@@ -29,8 +29,7 @@
 }
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{font-family:'72',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-*,*::before,*::after,button,input,select,textarea,a{font-family:inherit!important;-webkit-text-size-adjust:100%}
-@media(max-width:1024px){body,*,*::before,*::after,button,input,select,textarea,a,h1,h2,h3,h4,p,span,div,li{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif!important}}
+*,*::before,*::after,button,input,select,textarea,a,h1,h2,h3,h4,h5,h6,p,span,div,li{font-family:'72',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;-webkit-text-size-adjust:100%}
 .container{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 section{padding:100px 0}
 
@@ -203,7 +202,7 @@ section{padding:100px 0}
 .ai-main-desc{font-size:15px;opacity:0.8;line-height:1.6;position:relative;z-index:2;max-width:380px}
 .ai-anvil-float{position:absolute;bottom:24px;right:32px;width:120px;height:auto;opacity:0.15}
 .ai-main-cta{position:relative;z-index:2;margin-top:8px}
-.ai-main-cta a{background:white;color:var(--dark);padding:14px 24px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;font-family:'72';transition:all 0.3s}
+.ai-main-cta a{background:white;color:var(--dark);padding:14px 24px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.3s}
 .ai-main-cta a:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,0.15)}
 .ai-side{display:grid;gap:20px}
 .ai-feature-card{background:white;border-radius:16px;padding:28px;border:1px solid rgba(0,112,242,0.06);transition:all 0.4s;position:relative;overflow:hidden}
@@ -344,10 +343,10 @@ section{padding:100px 0}
   .pain-card{padding:22px 20px}
   .cta-left{padding:40px 24px}
   .cta-left h2{font-size:26px}
-  .ai-main-card{padding:28px 20px}
+  .ai-main-card{padding:28px 20px;overflow:visible}
   .ai-main-title{font-size:22px}
   .ai-main-desc{font-size:14px;max-width:100%}
-  .ai-main-cta a{padding:12px 18px;font-size:13px;display:inline-block;line-height:1.4;text-align:center}
+  .ai-main-cta a{padding:12px 16px;font-size:13px;display:block;line-height:1.4;text-align:center;width:100%;box-sizing:border-box}
 }
 </style>
 </head>
