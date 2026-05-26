@@ -117,12 +117,12 @@ section{padding:100px 0}
 
 /* LOGO CAROUSEL */
 .logos-section{padding:32px 0;overflow:hidden;border-bottom:1px solid rgba(0,112,242,0.06)}
-.logos-track{display:flex;animation:logoScroll 8s linear infinite}
+.logos-track{display:flex;will-change:transform;animation:logoScroll 20s linear infinite}
 .logos-slide{display:flex;align-items:center;flex-shrink:0}
 .logo-item{display:flex;align-items:center;justify-content:center;width:180px;height:50px;opacity:0.5;transition:opacity 0.3s;filter:grayscale(100%);flex-shrink:0;padding:0 30px}
 .logo-item:hover{opacity:1;filter:grayscale(0%)}
 .logo-item img{max-height:36px;width:auto;max-width:140px}
-@keyframes logoScroll{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes logoScroll{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(-33.333%,0,0)}}
 
 /* PAIN POINTS */
 .pain-section{padding:100px 0}
@@ -319,7 +319,9 @@ section{padding:100px 0}
   .cta-right{min-height:200px;position:relative}
   .cta-stat-float{position:relative;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;display:inline-block;margin:6px}
   .cta-right{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:24px;gap:8px}
-  .logos-track{animation:logoScroll 8s linear infinite}
+  .logos-track{animation:logoScroll 12s linear infinite}
+  .logo-item{width:120px;padding:0 16px}
+  .logo-item img{max-height:28px;max-width:100px}
   .nav-links{display:none}
   .pain-layout{grid-template-columns:1fr}
   .pain-img-wrap{min-height:280px}
@@ -342,6 +344,10 @@ section{padding:100px 0}
   .pain-card{padding:22px 20px}
   .cta-left{padding:40px 24px}
   .cta-left h2{font-size:26px}
+  .ai-main-card{padding:28px 20px}
+  .ai-main-title{font-size:22px}
+  .ai-main-desc{font-size:14px;max-width:100%}
+  .ai-main-cta a{padding:12px 18px;font-size:13px;display:inline-block;line-height:1.4;text-align:center}
 }
 </style>
 </head>
@@ -446,6 +452,19 @@ section{padding:100px 0}
 <section class="logos-section">
   <div class="logos-track">
     <div class="logos-slide">
+      <div class="logo-item"><img src="logo-argos.svg" alt="Argos"></div>
+      <div class="logo-item"><img src="logo-airbus.png" alt="Airbus"></div>
+      <div class="logo-item"><img src="logo-franke.svg" alt="Franke"></div>
+      <div class="logo-item"><img src="logo-mewa.png" alt="Mewa"></div>
+      <div class="logo-item"><img src="logo-mondi.png" alt="Mondi"></div>
+      <div class="logo-item"><img src="logo-versuni.svg" alt="Versuni"></div>
+      <div class="logo-item"><img src="logo-stabilus.svg" alt="Stabilus"></div>
+      <div class="logo-item"><img src="logo-scott.png" alt="Scott"></div>
+      <div class="logo-item"><img src="logo-pfleiderer.png" alt="Pfleiderer"></div>
+      <div class="logo-item"><img src="christ-logo.svg" alt="CHRIST"></div>
+      <div class="logo-item"><img src="eurogast-logo.svg" alt="Eurogast"></div>
+    </div>
+    <div class="logos-slide" aria-hidden="true">
       <div class="logo-item"><img src="logo-argos.svg" alt="Argos"></div>
       <div class="logo-item"><img src="logo-airbus.png" alt="Airbus"></div>
       <div class="logo-item"><img src="logo-franke.svg" alt="Franke"></div>
