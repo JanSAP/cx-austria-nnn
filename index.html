@@ -4,6 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SAP CX Austria - SMART Selling</title>
+<link rel="preload" href="AdobeStock_1039726508.jpeg" as="image" fetchpriority="high">
+<link rel="preload" href="https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Bold.woff2" as="font" type="font/woff2" crossorigin>
 <style>
 @font-face{font-family:'72';src:url(https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Regular.woff2) format('woff2');font-weight:400}
 @font-face{font-family:'72';src:url(https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Bold.woff2) format('woff2');font-weight:700}
@@ -26,6 +29,7 @@
 }
 html{scroll-behavior:smooth;overflow-x:hidden}
 body{font-family:'72',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+*,button,input,a{font-family:inherit}
 .container{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 section{padding:100px 0}
 
@@ -180,7 +184,7 @@ section{padding:100px 0}
 .story-logo-wrap img{height:26px;width:auto;opacity:0.85}
 .story-quote{font-size:16px;line-height:1.6;color:var(--text);font-style:italic;margin-bottom:12px;flex:1;font-weight:400}
 .story-author{font-size:14px;font-weight:700;color:var(--dark);margin-bottom:14px}
-.story-stats{display:flex;align-items:flex-end;gap:24px;padding-top:14px;border-top:1px solid rgba(0,112,242,0.06)}
+.story-stats{display:flex;align-items:flex-end;gap:24px;padding-top:18px;margin-top:18px;border-top:1px solid rgba(0,112,242,0.06)}
 .story-stat-item strong{font-size:20px;font-weight:700;color:var(--dark);display:block;line-height:1.2}
 .story-stat-item span{font-size:12px;color:var(--muted);line-height:1.3}
 .story-link{display:flex;align-items:center;justify-content:center;width:32px;height:32px;margin-left:auto;transition:all 0.3s;flex-shrink:0;opacity:0.6}
@@ -224,8 +228,8 @@ section{padding:100px 0}
 .faq-item.open .faq-toggle{background:var(--blue)}
 .faq-item.open .faq-toggle svg{fill:white;transform:rotate(45deg)}
 .faq-a{max-height:0;overflow:hidden;transition:max-height 0.4s cubic-bezier(.4,0,.2,1)}
-.faq-item.open .faq-a{max-height:200px}
-.faq-a p{font-size:14px;color:var(--muted);line-height:1.7;padding-bottom:22px}
+.faq-item.open .faq-a{max-height:400px}
+.faq-a p{font-size:14px;color:var(--muted);line-height:1.7;padding:4px 0 28px}
 
 /* CONTACT - premium design */
 .contact-section{background:var(--white)}
@@ -292,28 +296,51 @@ section{padding:100px 0}
   .hero{grid-template-columns:1fr;padding:48px 36px;min-height:auto}
   .hero-text{text-align:center}
   .hero-sub{margin-left:auto;margin-right:auto}
-  .hero-actions{justify-content:center}
+  .hero-actions{justify-content:center;flex-wrap:wrap}
   .hero-visual{margin-top:36px}
-  .ui-stack{width:320px;height:280px}
+  .ui-stack{width:320px;height:280px;margin:0 auto}
   .ui-card-main{width:260px;height:210px}
+  .ui-card-main div:last-child{padding-bottom:14px}
   .stats-grid{grid-template-columns:1fr}
   .bento-grid{grid-template-columns:1fr}
   .bento-card.large{grid-template-columns:1fr}
   .bento-card.tall{grid-column:1;grid-row:auto}
+  .bento-card.tall{padding:28px 28px}
+  .bento-stat{text-align:center}
   .bento-row{grid-column:1}
   .stories-grid{grid-template-columns:1fr}
+  .story-stat-item span{line-height:1.2}
   .ai-grid{grid-template-columns:1fr}
   .faq-layout{grid-template-columns:1fr}
   .faq-intro{position:static}
   .contact-grid{grid-template-columns:1fr}
   .cta-wrap{grid-template-columns:1fr;margin:0 var(--pad)}
-  .cta-right{min-height:200px}
+  .cta-right{min-height:200px;position:relative}
+  .cta-stat-float{position:relative;top:auto!important;left:auto!important;right:auto!important;bottom:auto!important;display:inline-block;margin:6px}
+  .cta-right{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;padding:24px;gap:8px}
+  .logos-track{animation:logoScroll 12s linear infinite}
   .nav-links{display:none}
+  .pain-layout{grid-template-columns:1fr}
+  .pain-img-wrap{min-height:280px}
 }
 @media(max-width:768px){
   :root{--pad:20px}
   .bento-row{grid-template-columns:1fr}
   .contact-grid{gap:20px}
+  .hero{padding:40px 24px}
+  .hero h1{font-size:32px}
+  .hero-sub{font-size:14px}
+  .hero-actions{gap:10px}
+  .btn-primary,.btn-secondary{padding:13px 22px;font-size:14px}
+  .section-title{font-size:26px}
+  .bento-stat{font-size:64px}
+  .story-body{padding:18px}
+  .story-stats{gap:16px;flex-wrap:wrap}
+  .story-stat-item span{font-size:11px;line-height:1.2}
+  .pain-title{font-size:26px}
+  .pain-card{padding:22px 20px}
+  .cta-left{padding:40px 24px}
+  .cta-left h2{font-size:26px}
 }
 </style>
 </head>
