@@ -4,13 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>SAP CX Austria - SMART Selling</title>
-<link rel="preload" href="AdobeStock_1039726508.jpeg" as="image" fetchpriority="high">
-<link rel="preload" href="https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Bold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="287942_GettyImages-1169537943_medium_jpg.jpg" as="image" fetchpriority="high">
 <style>
-@font-face{font-family:'72';src:url(https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Regular.woff2) format('woff2');font-weight:400}
-@font-face{font-family:'72';src:url(https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Bold.woff2) format('woff2');font-weight:700}
-@font-face{font-family:'72';src:url(https://experience.sap.com/fiori-design-web/wp-content/uploads/sites/5/2019/02/72-Light.woff2) format('woff2');font-weight:300}
 
 *{margin:0;padding:0;box-sizing:border-box}
 :root{
@@ -28,9 +23,8 @@
   --pad:72px;
 }
 html{scroll-behavior:smooth;overflow-x:hidden}
-body{font-family:'72',system-ui,-apple-system,sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
-*,button,input,a{font-family:inherit}
-@media(max-width:1024px){body,*,button,input,a,h1,h2,h3,h4,h5,h6,p,span,div,li,select,textarea,.btn-primary,.btn-secondary,.nav-cta,.ai-main-cta a,.faq-q,.contact-link-item{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif!important}}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;color:var(--text);background:var(--white);line-height:1.6;overflow-x:hidden}
+*,*::before,*::after,button,input,select,textarea,a{font-family:inherit}
 .container{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
 section{padding:100px 0}
 
@@ -42,12 +36,12 @@ section{padding:100px 0}
 .nav-links{display:flex;align-items:center;gap:28px}
 .nav-links a{font-size:14px;font-weight:400;color:var(--text);text-decoration:none;transition:color 0.3s}
 .nav-links a:hover{color:var(--blue)}
-.nav-cta{background:var(--blue);color:white;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.3s;font-family:'72',system-ui,-apple-system,sans-serif}
+.nav-cta{background:var(--blue);color:white;padding:10px 22px;border-radius:10px;font-size:14px;font-weight:700;text-decoration:none;transition:all 0.3s}
 .nav-cta:hover{background:var(--dark);transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,112,242,0.25)}
 
 /* HERO - contained card with background image */
 .hero-wrapper{padding:100px 10px 0;max-width:calc(var(--max) + 160px);margin:0 auto}
-.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:100px 72px;position:relative;overflow:hidden;border-radius:24px;background:url('AdobeStock_1039726508.jpeg') center/cover no-repeat;min-height:75vh}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:100px 72px;position:relative;overflow:hidden;border-radius:24px;background:url('287942_GettyImages-1169537943_medium_jpg.jpg') center/cover no-repeat;min-height:75vh}
 .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,13,43,0.85) 0%,rgba(0,42,134,0.55) 50%,rgba(0,42,134,0.15) 100%);z-index:1}
 .hero-text{position:relative;z-index:2}
 .hero-badge{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.15);backdrop-filter:blur(8px);border-radius:100px;font-size:13px;font-weight:700;color:rgba(255,255,255,0.9);margin-bottom:28px;animation:fadeUp 0.8s cubic-bezier(.16,1,.3,1) 0.2s both}
@@ -61,9 +55,9 @@ section{padding:100px 0}
 .hero .btn-primary:hover{background:var(--sky);box-shadow:0 12px 28px rgba(0,0,0,0.2)}
 .hero .btn-secondary{background:transparent;color:rgba(255,255,255,0.9);border-color:rgba(255,255,255,0.25);backdrop-filter:blur(4px)}
 .hero .btn-secondary:hover{border-color:rgba(255,255,255,0.5);background:rgba(255,255,255,0.08)}
-.btn-primary{background:var(--blue);color:white;padding:15px 28px;border-radius:12px;font-size:15px;font-weight:700;font-family:'72',system-ui,-apple-system,sans-serif;text-decoration:none;transition:all 0.35s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
+.btn-primary{background:var(--blue);color:white;padding:15px 28px;border-radius:12px;font-size:15px;font-weight:700;text-decoration:none;transition:all 0.35s;display:inline-flex;align-items:center;gap:8px;border:none;cursor:pointer}
 .btn-primary:hover{background:var(--dark);transform:translateY(-2px);box-shadow:0 12px 28px rgba(0,112,242,0.25)}
-.btn-secondary{background:transparent;color:var(--blue);padding:15px 28px;border-radius:12px;font-size:15px;font-weight:700;font-family:'72',system-ui,-apple-system,sans-serif;text-decoration:none;border:2px solid rgba(0,112,242,0.15);transition:all 0.35s}
+.btn-secondary{background:transparent;color:var(--blue);padding:15px 28px;border-radius:12px;font-size:15px;font-weight:700;text-decoration:none;border:2px solid rgba(0,112,242,0.15);transition:all 0.35s}
 .btn-secondary:hover{border-color:var(--blue);background:var(--sky);transform:translateY(-2px)}
 
 /* Hero UI Visual - floating cards */
@@ -74,7 +68,7 @@ section{padding:100px 0}
 @keyframes uiFloat{0%,100%{transform:rotateY(-5deg) rotateX(3deg) translateY(0)}50%{transform:rotateY(-3deg) rotateX(2deg) translateY(-8px)}}
 .ui-card-side{width:170px;height:150px;top:5px;right:10px;transform:rotateY(-6deg) rotateX(3deg) translateZ(20px);animation:uiFloat2 5s ease-in-out infinite;animation-delay:-1.5s}
 @keyframes uiFloat2{0%,100%{transform:rotateY(-6deg) rotateX(3deg) translateZ(20px) translateY(0)}50%{transform:rotateY(-4deg) rotateX(2deg) translateZ(20px) translateY(-6px)}}
-.ui-card-bottom{width:210px;height:90px;bottom:5px;left:40px;transform:rotateY(-4deg) rotateX(2deg) translateZ(10px);animation:uiFloat3 7s ease-in-out infinite;animation-delay:-3s}
+.ui-card-bottom{width:210px;min-height:90px;bottom:5px;left:40px;transform:rotateY(-4deg) rotateX(2deg) translateZ(10px);animation:uiFloat3 7s ease-in-out infinite;animation-delay:-3s}
 @keyframes uiFloat3{0%,100%{transform:rotateY(-4deg) rotateX(2deg) translateZ(10px) translateY(0)}50%{transform:rotateY(-2deg) rotateX(1deg) translateZ(10px) translateY(-5px)}}
 /* Main UI card content */
 .ui-header{padding:16px 20px;border-bottom:1px solid #eef2f6;display:flex;align-items:center;justify-content:space-between}
@@ -375,8 +369,8 @@ section{padding:100px 0}
     <h1>Verkaufen Sie<br><span class="accent">schneller.</span><br>Intelligenter.</h1>
     <p class="hero-sub">Ihr Vertrieb verdient bessere Werkzeuge. SAP CX bringt Sie in 5 Wochen live - mit KI, die Deals beschleunigt, nicht Arbeit verursacht.</p>
     <div class="hero-actions">
-      <a href="#contact" class="btn-primary">Kostenlosen AI Workshop buchen</a>
-      <a href="#benefits" class="btn-secondary">Vorteile entdecken</a>
+      <a href="#benefits" class="btn-primary">Vorteile entdecken</a>
+      <a href="#contact" class="btn-secondary">Kostenlosen AI Workshop buchen</a>
     </div>
   </div>
   <div class="hero-visual">
@@ -434,15 +428,15 @@ section{padding:100px 0}
 <section class="stats-section reveal">
   <div class="stats-grid">
     <div class="stat-card">
-      <div class="stat-card-title"><span>5 Wochen</span> bis Go-Live</div>
+      <div class="stat-card-title"><span>~5 Wochen</span> bis Go-Live</div>
       <div class="stat-card-desc">Kein Mammutprojekt. Ihr Vertrieb ist in 5 Wochen produktiv - schneller als jede Alternative am Markt.</div>
     </div>
     <div class="stat-card">
-      <div class="stat-card-title"><span>+300% ROI</span> im ersten Jahr</div>
+      <div class="stat-card-title"><span>+291% ROI</span> im ersten Jahr</div>
       <div class="stat-card-desc">Kein leeres Versprechen. Unsere Kunden messen es. Automatisierung und KI machen den Unterschied.</div>
     </div>
     <div class="stat-card">
-      <div class="stat-card-title"><span>+20%</span> mehr Abschluesse</div>
+      <div class="stat-card-title"><span>+20%</span> mehr Abschlüsse</div>
       <div class="stat-card-desc">Ihr Team konzentriert sich auf Deals, die sich lohnen. Lead Scoring und Auto-Follow-ups erledigen den Rest.</div>
     </div>
   </div>
@@ -510,7 +504,7 @@ section{padding:100px 0}
         <div class="pain-card reveal reveal-d1">
           <div class="pain-card-title">Reports statt Revenue</div>
           <div class="pain-card-desc">Ihr Team verbringt halbe Tage mit manuellen Reports und CRM-Pflege. Zeit, die beim Kunden fehlt.</div>
-          <div class="pain-card-tag">Produktivitaet</div>
+          <div class="pain-card-tag">Produktivität</div>
         </div>
       </div>
       <div class="pain-img-wrap reveal">
@@ -537,7 +531,7 @@ section{padding:100px 0}
   <div class="container">
     <div class="section-header reveal">
       <div class="section-overline">Ihre Vorteile</div>
-      <h2 class="section-title">Weniger Aufwand.<br><span class="light">Mehr Abschluesse.</span></h2>
+      <h2 class="section-title">Weniger Aufwand.<br><span class="light">Mehr Abschlüsse.</span></h2>
     </div>
     <div class="bento-grid">
       <div class="bento-card large reveal">
@@ -558,7 +552,7 @@ section{padding:100px 0}
           <div class="bento-title">High Return on Investment</div>
           <div class="bento-desc">Weniger Aufwand, mehr Abschluss. Automatisierung und smarte Empfehlungen treiben Ihren ROI nach oben.</div>
         </div>
-        <div class="bento-stat">+300%</div>
+        <div class="bento-stat">+291%</div>
       </div>
       <div class="bento-row">
         <div class="bento-card reveal reveal-d2" style="position:relative">
@@ -570,7 +564,7 @@ section{padding:100px 0}
         <div class="bento-card reveal reveal-d3" style="position:relative">
           <div class="bento-icon"><svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.49.49 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6A3.61 3.61 0 018.4 12 3.61 3.61 0 0112 8.4a3.61 3.61 0 013.6 3.6 3.61 3.61 0 01-3.6 3.6z"/></svg></div>
           <div class="bento-title">Sales Automation</div>
-          <div class="bento-desc">Follow-ups, Reports, CRM-Updates - laeuft alles automatisch. Ihr Team macht das, was zaehlt: verkaufen.</div>
+          <div class="bento-desc">Follow-ups, Reports, CRM-Updates - läuft alles automatisch. Ihr Team macht das, was zählt: verkaufen.</div>
           <div class="bento-card-anvil"><svg viewBox="0 0 400 200"><polygon fill="#d1efff" points="400 0 0 0 0 200 200 200 400 0"/></svg></div>
         </div>
       </div>
@@ -583,7 +577,7 @@ section{padding:100px 0}
   <div class="container">
     <div class="section-header reveal">
       <div class="section-overline">Erfolgsgeschichten</div>
-      <h2 class="section-title">Unternehmen, die bereits<br><span class="light">schneller verkaufen</span></h2>
+      <h2 class="section-title">Unternehmen, die bereits<br><span class="light">smarter verkaufen</span></h2>
     </div>
     <div class="stories-grid">
       <!-- Eurogast -->
@@ -611,7 +605,7 @@ section{padding:100px 0}
         </div>
         <div class="story-body">
           <div class="story-logo-wrap"><img src="christ-logo.svg" alt="CHRIST"></div>
-          <p class="story-quote">"Fuer ganzjaehriges Shopping und besonders in der Peak Season geben uns SAP Commerce Cloud und SAP Emarsys genau das, was wir brauchen, um die Besten zu sein."</p>
+          <p class="story-quote">"Für ganzjähriges Shopping und besonders in der Peak Season geben uns SAP Commerce Cloud und SAP Emarsys genau das, was wir brauchen, um die Besten zu sein."</p>
           <div class="story-author">Michael Berghoff, Chief Digital Officer</div>
           <div class="story-stats">
             <div class="story-stat-item"><strong>+40%</strong><span>Umsatz in 1 Jahr</span></div>
@@ -628,11 +622,11 @@ section{padding:100px 0}
         </div>
         <div class="story-body">
           <div class="story-logo-wrap"><img src="pilz-logo.jpg" alt="Pilz" style="border-radius:4px"></div>
-          <p class="story-quote">"SAP Sales Cloud und SAP Service Cloud ermoeglichen uns eine effiziente Zusammenarbeit ueber internationale Abteilungen hinweg und heben unsere Dokumentation auf ein neues Level."</p>
+          <p class="story-quote">"SAP Sales Cloud und SAP Service Cloud ermöglichen uns eine effiziente Zusammenarbeit über internationale Abteilungen hinweg und heben unsere Dokumentation auf ein neues Level."</p>
           <div class="story-author">Steffen Heber, VP Global Sales Operations</div>
           <div class="story-stats">
-            <div class="story-stat-item"><strong>Schnelle</strong><span>Problemloesung</span></div>
-            <div class="story-stat-item"><strong>Bewaehrte</strong><span>Methodik</span></div>
+            <div class="story-stat-item"><strong>Schnelle</strong><span>Problemlösung</span></div>
+            <div class="story-stat-item"><strong>Bewährte</strong><span>Methodik</span></div>
           <div class="story-link"><svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg></div>
           </div>
         </div>
@@ -645,7 +639,7 @@ section{padding:100px 0}
         </div>
         <div class="story-body">
           <div class="story-logo-wrap"><img src="tsf-logo.png" alt="TSG Hoffenheim"></div>
-          <p class="story-quote">"Mit SAP Engagement Cloud koennen wir jeden Fan persoenlich und relevant erreichen - egal ob zuhause, im Stadion oder online."</p>
+          <p class="story-quote">"Mit SAP Engagement Cloud können wir jeden Fan persönlich und relevant erreichen - egal ob zuhause, im Stadion oder online."</p>
           <div class="story-author">Villa Vongpraseut, Head of Marketing</div>
           <div class="story-stats">
             <div class="story-stat-item"><strong>1 System</strong><span>statt 4 separate</span></div>
@@ -668,14 +662,14 @@ section{padding:100px 0}
     <div class="ai-grid">
       <div class="ai-main-card reveal">
         <div class="ai-main-title">Ihre KI. Ihre Deals. Ihr Vorsprung.</div>
-        <div class="ai-main-desc">Waehrend andere noch Daten suchen, liefert Ihnen SAP CX bereits die naechste Empfehlung. Direkt im Workflow. Ohne Umwege.</div>
+        <div class="ai-main-desc">Während andere noch Daten suchen, liefert Ihnen SAP CX bereits die nächste Empfehlung. Direkt im Workflow. Ohne Umwege.</div>
         <div class="ai-main-cta"><a href="#contact">Kostenlosen AI Workshop buchen</a></div>
       </div>
       <div class="ai-side">
         <div class="ai-feature-card reveal reveal-d1">
           <div class="ai-feature-num">01</div>
           <div class="ai-feature-title">Predictive Lead Scoring</div>
-          <div class="ai-feature-desc">Ihr Team weiss sofort, welche Deals sich lohnen. Schluss mit Bauchgefuehl - die KI priorisiert fuer Sie.</div>
+          <div class="ai-feature-desc">Ihr Team weiss sofort, welche Deals sich lohnen. Schluss mit Bauchgefuehl - die KI priorisiert für Sie.</div>
         </div>
         <div class="ai-feature-card reveal reveal-d2">
           <div class="ai-feature-num">02</div>
@@ -698,38 +692,38 @@ section{padding:100px 0}
     <div class="faq-layout">
       <div class="faq-intro reveal">
         <div class="section-overline">FAQ</div>
-        <h2>Haeufig gestellte Fragen</h2>
-        <p>Alles, was Sie ueber SAP CX wissen muessen - bevor Sie mit uns sprechen.</p>
+        <h2>Häufig gestellte Fragen</h2>
+        <p>Alles, was Sie über SAP CX wissen muessen - bevor Sie mit uns sprechen.</p>
         <a href="#contact" class="btn-primary" style="font-size:14px;padding:12px 22px">Frage stellen</a>
       </div>
       <div class="faq-list">
         <div class="faq-item reveal">
           <div class="faq-q">Muss ich SAP ERP haben, um die Sales Cloud zu nutzen?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
-          <div class="faq-a"><p>Nein. SAP CX funktioniert vollstaendig unabhaengig von Ihrer bestehenden IT-Landschaft. Sie brauchen kein SAP ERP, kein S/4HANA und keine andere SAP-Loesung als Voraussetzung. Die Sales Cloud ist eine eigenstaendige Cloud-Plattform mit eigener Datenhaltung. Wenn Sie allerdings bereits SAP nutzen, profitieren Sie von nahtloser Integration und durchgaengigen Datenfluessen zwischen Vertrieb, Finanzen und Logistik.</p></div>
+          <div class="faq-a"><p>Nein. SAP CX funktioniert vollständig unabhängig von Ihrer bestehenden IT-Landschaft. Sie brauchen kein SAP ERP, kein S/4HANA und keine andere SAP-Lösung als Voraussetzung. Die Sales Cloud ist eine eigenständige Cloud-Plattform mit eigener Datenhaltung. Wenn Sie allerdings bereits SAP nutzen, profitieren Sie von nahtloser Integration und durchgängigen Datenflüssen zwischen Vertrieb, Finanzen und Logistik.</p></div>
         </div>
         <div class="faq-item reveal reveal-d1">
           <div class="faq-q">Wie schnell kann mein Team produktiv sein?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
-          <div class="faq-a"><p>Im Durchschnitt 5 Wochen von Projektstart bis Go-Live. Unser Plug & Play Ansatz minimiert Komplexitaet und maximiert Time-to-Value. Ihr Team erhaelt ein strukturiertes Onboarding und kann vom ersten Tag an mit echten Daten arbeiten. Wir begleiten Sie mit dedizierten Implementierungspartnern, die Ihre Branche kennen - ohne langwierige Beratungsprojekte oder versteckte Kosten.</p></div>
+          <div class="faq-a"><p>Im Durchschnitt 5 Wochen von Projektstart bis Go-Live. Unser Plug & Play Ansatz minimiert Komplexität und maximiert Time-to-Value. Ihr Team erhält ein strukturiertes Onboarding und kann vom ersten Tag an mit echten Daten arbeiten. Wir begleiten Sie mit dedizierten Implementierungspartnern, die Ihre Branche kennen - ohne langwierige Beratungsprojekte oder versteckte Kosten.</p></div>
         </div>
         <div class="faq-item reveal reveal-d2">
-          <div class="faq-q">Was unterscheidet SAP CX von anderen CRM-Loesungen?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
-          <div class="faq-a"><p>Eingebettete KI ab Tag 1, durchgehende Automatisierung und die Moeglichkeit, bei Wachstum nahtlos mit dem gesamten SAP-Oekosystem zu skalieren. Anders als bei Einzelloesungen bekommen Sie Sales, Service und Commerce aus einer Hand - mit einer einzigen Datenbasis. Dazu kommt die SAP Business AI (Joule), die Ihren Vertrieb mit Predictive Lead Scoring, automatisierten Follow-ups und intelligenten Handlungsempfehlungen in Echtzeit unterstuetzt.</p></div>
+          <div class="faq-q">Was unterscheidet SAP CX von anderen CRM-Lösungen?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
+          <div class="faq-a"><p>Eingebettete KI ab Tag 1, durchgehende Automatisierung und die Möglichkeit, bei Wachstum nahtlos mit dem gesamten SAP-Ökosystem zu skalieren. Anders als bei Einzellösungen bekommen Sie Sales, Service und Commerce aus einer Hand - mit einer einzigen Datenbasis. Dazu kommt die SAP Business AI (Joule), die Ihren Vertrieb mit Predictive Lead Scoring, automatisierten Follow-ups und intelligenten Handlungsempfehlungen in Echtzeit unterstützt.</p></div>
         </div>
         <div class="faq-item reveal reveal-d3">
-          <div class="faq-q">Fuer welche Unternehmen ist SAP CX geeignet?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
-          <div class="faq-a"><p>Vom KMU bis zum Konzern. Die Loesung skaliert mit Ihnen - ob 5 oder 5.000 Vertriebsmitarbeiter. Besonders profitieren Unternehmen mit Aussendienst, komplexen Verkaufszyklen oder mehreren Vertriebskanaelen. Ob Fertigung, Handel, Dienstleistung oder Technologie: ueberall dort, wo strukturierte Vertriebsprozesse und datengetriebene Entscheidungen den Unterschied machen, spielt SAP CX seine Staerken aus.</p></div>
+          <div class="faq-q">Für welche Unternehmen ist SAP CX geeignet?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
+          <div class="faq-a"><p>Vom KMU bis zum Konzern. Die Lösung skaliert mit Ihnen - ob 5 oder 5.000 Vertriebsmitarbeiter. Besonders profitieren Unternehmen mit Außendienst, komplexen Verkaufszyklen oder mehreren Vertriebskanälen. Ob Fertigung, Handel, Dienstleistung oder Technologie: überall dort, wo strukturierte Vertriebsprozesse und datengetriebene Entscheidungen den Unterschied machen, spielt SAP CX seine Stärken aus.</p></div>
         </div>
         <div class="faq-item reveal reveal-d4">
           <div class="faq-q">Was kostet der AI Workshop?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
-          <div class="faq-a"><p>Der Workshop ist kostenlos und unverbindlich. In 60 Minuten zeigen wir Ihnen anhand Ihrer konkreten Vertriebsprozesse, wie KI Ihren Alltag vereinfacht. Es gibt keinerlei Verpflichtung danach - keine versteckten Gebuehren, kein Abo, kein Kleingedrucktes. Sie erhalten konkrete, auf Ihr Unternehmen zugeschnittene Handlungsempfehlungen, die Sie sofort umsetzen koennen.</p></div>
+          <div class="faq-a"><p>Der Workshop ist kostenlos und unverbindlich. Wir analysieren mit Ihnen gemeinsam Ihre Vertriebsprozesse und zeigen Ihnen, wie KI Ihren Alltag vereinfacht. Es gibt keinerlei Verpflichtung danach - keine versteckten Gebühren, kein Abo, kein Kleingedrucktes. Sie erhalten konkrete, auf Ihr Unternehmen zugeschnittene Handlungsempfehlungen, die Sie sofort umsetzen können.</p></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Wie sieht der Datenschutz bei SAP CX aus?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
-          <div class="faq-a"><p>SAP CX laeuft auf europaeischen Rechenzentren und ist vollstaendig DSGVO-konform. Ihre Kundendaten bleiben in der EU und unterliegen den hoechsten Sicherheitsstandards. SAP investiert jaehrlich Milliarden in Datenschutz und Compliance. Regelmaessige Audits, ISO-Zertifizierungen und ein dediziertes Security-Team sorgen dafuer, dass Ihre sensiblen Kundendaten jederzeit geschuetzt sind - auch gegenueber Drittanbietern.</p></div>
+          <div class="faq-a"><p>SAP CX läuft auf europäischen Rechenzentren und ist vollständig DSGVO-konform. Ihre Kundendaten bleiben in der EU und unterliegen den höchsten Sicherheitsstandards. SAP investiert jährlich Milliarden in Datenschutz und Compliance. Regelmäßige Audits, ISO-Zertifizierungen und ein dediziertes Security-Team sorgen dafür, dass Ihre sensiblen Kundendaten jederzeit geschuetzt sind - auch gegenüber Drittanbietern.</p></div>
         </div>
         <div class="faq-item reveal">
           <div class="faq-q">Kann ich SAP CX mit meinen bestehenden Tools verbinden?<span class="faq-toggle"><svg viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg></span></div>
-          <div class="faq-a"><p>Ja. SAP CX bietet offene APIs und vorgefertigte Integrationen fuer gaengige Tools wie Outlook, Teams, ERP-Systeme und Marketing-Plattformen. Ihr bestehendes Tech-Stack bleibt erhalten - SAP CX ergaenzt es intelligent. Ueber 200 vorkonfigurierte Konnektoren stehen bereit, und mit der SAP Integration Suite lassen sich auch individuelle Anbindungen ohne grossen Entwicklungsaufwand realisieren.</p></div>
+          <div class="faq-a"><p>Ja. SAP CX bietet offene APIs und vorgefertigte Integrationen für gängige Tools wie Outlook, Teams, ERP-Systeme und Marketing-Plattformen. Ihr bestehendes Tech-Stack bleibt erhalten - SAP CX ergänzt es intelligent. Über 200 vorkonfigurierte Konnektoren stehen bereit, und mit der SAP Integration Suite lassen sich auch individuelle Anbindungen ohne großen Entwicklungsaufwand realisieren.</p></div>
         </div>
       </div>
     </div>
@@ -741,7 +735,7 @@ section{padding:100px 0}
   <div class="container">
     <div class="section-header reveal">
       <div class="section-overline">Kontakt</div>
-      <h2 class="section-title">Sprechen Sie mit uns.<br><span class="light">Wir hoeren zu.</span></h2>
+      <h2 class="section-title">Sprechen Sie mit uns.<br><span class="light">Wir hören zu.</span></h2>
     </div>
     <div class="contact-grid">
       <div class="contact-card reveal">
@@ -774,7 +768,7 @@ section{padding:100px 0}
         </div>
         <div class="contact-name">Angelika Elgert-Pfannhauser</div>
         <div class="contact-role">Senior Solution Sales Executive</div>
-        <div class="contact-tagline">Gemeinsam finden wir die richtige CX-Loesung fuer Ihr Unternehmen.</div>
+        <div class="contact-tagline">Gemeinsam finden wir die richtige CX-Lösung für Ihr Unternehmen.</div>
         <div class="contact-links">
           <a href="mailto:angelika.elgert-pfannhauser@sap.com" class="contact-link-item">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -795,7 +789,7 @@ section{padding:100px 0}
         </div>
         <div class="contact-name">Mert Kaan Memili</div>
         <div class="contact-role">Strategic Sales CX</div>
-        <div class="contact-tagline">Lassen Sie uns ueber KI im Vertrieb sprechen - unverbindlich und konkret.</div>
+        <div class="contact-tagline">Lassen Sie uns über KI im Vertrieb sprechen - unverbindlich und konkret.</div>
         <div class="contact-links">
           <a href="mailto:mert.kaan.memili@sap.com" class="contact-link-item">
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
@@ -815,8 +809,8 @@ section{padding:100px 0}
 <section class="cta-section">
   <div class="cta-wrap reveal">
     <div class="cta-left">
-      <h2>Bereit fuer Ihren<br>Vorsprung?</h2>
-      <p>60 Minuten, die Ihren Vertrieb veraendern. Im kostenlosen AI Workshop zeigen wir Ihnen, was SAP CX konkret fuer Ihr Team bedeutet.</p>
+      <h2>Bereit für Ihren<br>Vorsprung?</h2>
+      <p>Transformieren Sie Ihren Vertrieb. Im kostenlosen AI Workshop zeigen wir Ihnen, was SAP CX konkret für Ihr Team bedeutet.</p>
       <a href="mailto:mert.kaan.memili@sap.com" class="btn-primary">Jetzt Termin vereinbaren</a>
     </div>
     <div class="cta-right">
@@ -824,9 +818,9 @@ section{padding:100px 0}
         <svg class="cta-anvil" viewBox="0 0 400 200"><polygon fill="#89d1ff" points="400 0 0 0 0 200 200 200"/></svg>
         <svg class="cta-anvil" viewBox="0 0 400 200"><polygon fill="#4dabf7" points="400 0 0 0 0 200 200 200"/></svg>
         <svg class="cta-anvil" viewBox="0 0 400 200"><polygon fill="#d1efff" points="400 0 0 0 0 200 200 200"/></svg>
-        <div class="cta-stat-float"><span class="num">+300%</span><span class="lbl">ROI</span></div>
-        <div class="cta-stat-float"><span class="num">5 Wo.</span><span class="lbl">Go-Live</span></div>
-        <div class="cta-stat-float"><span class="num">+20%</span><span class="lbl">Abschluesse</span></div>
+        <div class="cta-stat-float"><span class="num">+291%</span><span class="lbl">ROI</span></div>
+        <div class="cta-stat-float"><span class="num">~5 Wo.</span><span class="lbl">Go-Live</span></div>
+        <div class="cta-stat-float"><span class="num">+20%</span><span class="lbl">Abschlüsse</span></div>
         <div class="cta-stat-float"><span class="num">24/7</span><span class="lbl">KI-Support</span></div>
       </div>
     </div>
