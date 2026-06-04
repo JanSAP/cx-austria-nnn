@@ -40,7 +40,7 @@ section{padding:100px 0}
 .nav-cta:hover{background:var(--dark);transform:translateY(-1px);box-shadow:0 8px 20px rgba(0,112,242,0.25)}
 
 /* HERO - contained card with background image */
-.hero-wrapper{padding:100px 10px 0;max-width:calc(var(--max) + 160px);margin:0 auto}
+.hero-wrapper{padding:100px 48px 0;max-width:calc(var(--max) + 160px);margin:0 auto}
 .hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;padding:100px 72px;position:relative;overflow:hidden;border-radius:24px;background:url('287942_GettyImages-1169537943_medium_jpg.jpg') center/cover no-repeat;min-height:75vh}
 .hero::before{content:'';position:absolute;inset:0;background:linear-gradient(105deg,rgba(0,13,43,0.85) 0%,rgba(0,42,134,0.55) 50%,rgba(0,42,134,0.15) 100%);z-index:1}
 .hero-text{position:relative;z-index:2}
@@ -366,8 +366,8 @@ section{padding:100px 0}
 <section class="hero">
   <div class="hero-text">
     <div class="hero-badge">Auch ohne bestehende SAP-Landschaft</div>
-    <h1>Verkaufen Sie<br><span class="accent">schneller.</span><br>Intelligenter.</h1>
-    <p class="hero-sub">Ihr Vertrieb verdient bessere Werkzeuge. SAP CX bringt Sie in 5 Wochen live - mit KI, die Deals beschleunigt, nicht Arbeit verursacht.</p>
+    <h1>Ihr Team kennt den Kunden.<br><span class="accent">Die Systeme kennen ihn nicht.</span></h1>
+    <p class="hero-sub">Vertrieb, Marketing und Service reden täglich mit denselben Menschen – aber jeder fängt von vorne an. Das kostet nicht nur Nerven und Zeit. Es kostet Umsatz.</p>
     <div class="hero-actions">
       <a href="#benefits" class="btn-primary">Vorteile entdecken</a>
       <a href="#contact" class="btn-secondary">Kostenlosen AI Workshop buchen</a>
@@ -506,6 +506,11 @@ section{padding:100px 0}
           <div class="pain-card-desc">Ihr Team verbringt halbe Tage mit manuellen Reports und CRM-Pflege. Zeit, die beim Kunden fehlt.</div>
           <div class="pain-card-tag">Produktivität</div>
         </div>
+        <div class="pain-card reveal reveal-d2">
+          <div class="pain-card-title">Kampagnen ohne Wirkung</div>
+          <div class="pain-card-desc">Newsletter an alle, persönliche Ansprache an niemanden. Ohne echte Kundendaten bleibt Marketing ein Schuss ins Blaue.</div>
+          <div class="pain-card-tag">Marketing</div>
+        </div>
       </div>
       <div class="pain-img-wrap reveal">
         <img src="301252-vu.webp" alt="Frustrated sales professional">
@@ -517,9 +522,14 @@ section{padding:100px 0}
           <div class="pain-card-tag">Adoption</div>
         </div>
         <div class="pain-card reveal reveal-d3">
-          <div class="pain-card-title">Bauchgefuehl statt Daten</div>
+          <div class="pain-card-title">Bauchgefühl statt Daten</div>
           <div class="pain-card-desc">Welche Deals lohnen sich? Wo steht die Pipeline wirklich? Ohne klare Daten bleiben Entscheidungen Zufall.</div>
           <div class="pain-card-tag">Forecasting</div>
+        </div>
+        <div class="pain-card reveal reveal-d4">
+          <div class="pain-card-title">Online-Kanäle ohne Verbindung</div>
+          <div class="pain-card-desc">Webshop, Kundenportal und Vertrieb leben in getrennten Welten. Der Kunde erlebt Brüche statt einer nahtlosen Journey.</div>
+          <div class="pain-card-tag">Commerce</div>
         </div>
       </div>
     </div>
@@ -753,7 +763,7 @@ section{padding:100px 0}
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             a.kollmann@sap.com
           </a>
-          <a href="tel:+4366478011332" class="contact-link-item">
+          <a href="#" onclick="navigator.clipboard.writeText('+43 664 780 11332');this.textContent='Kopiert!';setTimeout(()=>{this.innerHTML='<svg viewBox=&quot;0 0 24 24&quot;><path d=&quot;M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z&quot;/></svg>+43 664 780 11332'},1500);return false" class="contact-link-item">
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
             +43 664 780 11332
           </a>
@@ -774,7 +784,7 @@ section{padding:100px 0}
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             angelika.elgert-pfannhauser@sap.com
           </a>
-          <a href="tel:+436646207565" class="contact-link-item">
+          <a href="#" onclick="navigator.clipboard.writeText('+43 664 620 7565');this.textContent='Kopiert!';setTimeout(()=>{this.innerHTML='<svg viewBox=&quot;0 0 24 24&quot;><path d=&quot;M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z&quot;/></svg>+43 664 620 7565'},1500);return false" class="contact-link-item">
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
             +43 664 620 7565
           </a>
@@ -795,7 +805,7 @@ section{padding:100px 0}
             <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
             mert.kaan.memili@sap.com
           </a>
-          <a href="tel:+4312882275349" class="contact-link-item">
+          <a href="#" onclick="navigator.clipboard.writeText('+43 1 28822 75349');this.textContent='Kopiert!';setTimeout(()=>{this.innerHTML='<svg viewBox=&quot;0 0 24 24&quot;><path d=&quot;M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z&quot;/></svg>+43 1 28822 75349'},1500);return false" class="contact-link-item">
             <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
             +43 1 28822 75349
           </a>
