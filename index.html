@@ -287,7 +287,7 @@ section{padding:100px 0}
 /* RESPONSIVE */
 @media(max-width:1024px){
   :root{--pad:32px}
-  .hero-wrapper{padding-top:80px}
+  .hero-wrapper{padding-top:80px;padding-left:16px;padding-right:16px}
   .hero{grid-template-columns:1fr;padding:48px 36px;min-height:auto}
   .hero-text{text-align:center}
   .hero-sub{margin-left:auto;margin-right:auto}
@@ -296,6 +296,8 @@ section{padding:100px 0}
   .ui-stack{width:320px;height:280px;margin:0 auto}
   .ui-card-main{width:260px;height:210px}
   .ui-card-main div:last-child{padding-bottom:14px}
+  .ui-card-side{width:140px;height:120px}
+  .ui-card-bottom{width:180px}
   .stats-grid{grid-template-columns:1fr}
   .bento-grid{grid-template-columns:1fr}
   .bento-card.large{grid-template-columns:1fr}
@@ -328,7 +330,7 @@ section{padding:100px 0}
   .hero h1{font-size:32px}
   .hero-sub{font-size:14px}
   .hero-actions{gap:10px}
-  .btn-primary,.btn-secondary{padding:13px 22px;font-size:14px}
+  .btn-primary,.btn-secondary{padding:13px 22px;font-size:14px;width:100%;justify-content:center}
   .section-title{font-size:26px}
   .bento-stat{font-size:64px}
   .story-body{padding:18px}
@@ -366,8 +368,8 @@ section{padding:100px 0}
 <section class="hero">
   <div class="hero-text">
     <div class="hero-badge">Auch ohne bestehende SAP-Landschaft</div>
-    <h1>Ihr Team kennt den Kunden.<br><span class="accent">Die Systeme kennen ihn nicht.</span></h1>
-    <p class="hero-sub">Vertrieb, Marketing und Service reden täglich mit denselben Menschen – aber jeder fängt von vorne an. Das kostet nicht nur Nerven und Zeit. Es kostet Umsatz.</p>
+    <h1>Verkaufen Sie<br><span class="accent">schneller.</span><br>Intelligenter.</h1>
+    <p class="hero-sub">Ihr Vertrieb verdient bessere Werkzeuge. SAP CX bringt Sie in 5 Wochen live - mit KI, die Deals beschleunigt, nicht Arbeit verursacht.</p>
     <div class="hero-actions">
       <a href="#benefits" class="btn-primary">Vorteile entdecken</a>
       <a href="#contact" class="btn-secondary">Kostenlosen AI Workshop buchen</a>
@@ -492,7 +494,8 @@ section{padding:100px 0}
   <div class="container">
     <div class="pain-title-wrap reveal">
       <div class="pain-overline">Kommt Ihnen das bekannt vor?</div>
-      <h2 class="pain-title">Warum Vertrieb heute<br><span>oft nicht funktioniert.</span></h2>
+      <h2 class="pain-title">Ihr Team kennt den Kunden.<br><span>Die Systeme kennen ihn nicht.</span></h2>
+      <p style="color:var(--muted);font-size:15px;max-width:600px;margin:16px auto 0;line-height:1.6">Vertrieb, Marketing und Service reden täglich mit denselben Menschen – aber jeder fängt von vorne an. Das kostet nicht nur Nerven und Zeit. Es kostet Umsatz.</p>
     </div>
     <div class="pain-layout">
       <div class="pain-col">
